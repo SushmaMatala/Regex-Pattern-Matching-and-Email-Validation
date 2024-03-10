@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: green;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Matching</h1>
+        <form action="/match" method="post">
+            <input type="text" name="text" placeholder="Enter Text to match" required>
+            <br>
+            <input type="text" name="pattern" placeholder="Enter Regex Pattern" required>
+            <br>
+            <input type="submit" value="Match">
+        </form>
+        <h1>Email Domain Extraction</h1>
+        <form action="/email" method="post">
+            <input type="text" name="email" placeholder="Enter Email Address" required>
+            <br>
+            <input type="submit" value="Extract Domain">
+        </form>
+    </div>
+</body>
+</html>
